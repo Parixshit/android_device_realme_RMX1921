@@ -128,7 +128,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_gl_backpressure=1 \
     ro.opengles.version=196610 \
     debug.renderengine.backend=skiaglthreaded \
-    renderthread.skia.reduceopstasksplitting=true \
     ro.config.avoid_gfx_accel=true \
     ro.hardware.egl=adreno \
     ro.hardware.vulkan=adreno
