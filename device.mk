@@ -334,7 +334,8 @@ PRODUCT_PACKAGES += \
     NfcNci \
     nqnfcee_access.xml \
     nqnfcse_access.xml \
-    Tag
+    Tag \
+    nfc_nci_nxp
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
@@ -489,7 +490,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/qcom-caf/sdm845 \
-    hardware/google/pixel
+    hardware/google/pixel \
+    hardware/nxp
 
 # Telephony
 PRODUCT_PACKAGES += \
