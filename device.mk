@@ -161,6 +161,7 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
+    RealmeDiracGef \
     RealmeDoze \
     devicesettings \
     RealmeProximityHelper
