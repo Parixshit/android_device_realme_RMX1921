@@ -206,6 +206,7 @@ PRODUCT_PACKAGES += \
 
 # RealmeParts
 PRODUCT_PACKAGES += \
+    RealmeDiracGef \
     RealmeDoze \
     RealmeProximityHelper \
     RealmeParts
