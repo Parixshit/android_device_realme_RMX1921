@@ -416,6 +416,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0 \
     android.hardware.sensors@1.0-impl.realme_sdm710 \
     android.hardware.sensors@1.0-service.realme_sdm710 \
     libsensorndkbridge
