@@ -52,8 +52,7 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libvolumelistener \
-    tinymix
+    libvolumelistener
 
 # RealmeDirac
 PRODUCT_COPY_FILES += \
