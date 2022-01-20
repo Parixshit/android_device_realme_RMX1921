@@ -1035,7 +1035,8 @@
 
     <string name="config_mainBuiltInDisplayCutoutRectApproximation">M -80 -1 L 80 -1 L 80 76.5 L -80 76.5 Z</string>
 
-    <dimen name="quick_qs_offset_height">154px</dimen>
+    <!-- Height of area above QQS where battery/time go (47dp to reduce scrolling) -->
+    <dimen name="quick_qs_offset_height">47dp</dimen>
 
     <!-- Height of the status bar -->
     <dimen name="status_bar_height">77px</dimen>
