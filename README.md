@@ -34,6 +34,11 @@ export CCACHE_EXEC=/usr/bin/ccache
 export CCACHE_DIR=/mnt/ccache
 ccache -M 100G -F 0                                  =    Set cache size limit to 100.0 GB.
 ```
+
+```
+sudo mount --bind /home/ubuntu/.cache /mnt/ccache && export USE_CCACHE=1 && export CCACHE_EXEC=/usr/bin/ccache && export CCACHE_DIR=/mnt/ccache && ccache -M 100G -F 0
+```
+
 - [Build crDroid and some general information](https://github.com/crdroidandroid/android#12-initializing-repo)
 
 - [crDroidAndroid-12.1-20220429-RMX1921-v8.4.zip](https://drive.google.com/uc?id=1TlSxalMFgkzB-gUQ7GqGpeuJClGCPvQc&export=download) 1.1 GB
