@@ -178,6 +178,11 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     debug.sf.earlyGl.sf.duration=13500000 \
     debug.sf.earlyGl.app.duration=21000000
 
+# Blur properties
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.surface_flinger.supports_background_blur=1 \
+    ro.sf.blurs_are_expensive=1
+
 # Recovery
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.binary_xml=false
