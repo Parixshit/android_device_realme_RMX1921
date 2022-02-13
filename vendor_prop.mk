@@ -128,7 +128,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=1 \
     debug.mdpcomp.logs=0 \
     debug.hwui.renderer=skiagl \
-    debug.sf.enable_gl_backpressure=1 \
     ro.opengles.version=196610 \
     debug.renderengine.backend=skiaglthreaded \
     ro.hardware.egl=adreno \
