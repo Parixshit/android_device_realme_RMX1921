@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/realme/RMX1921/RMX1921-vendor.mk)
+$(call inherit-product, vendor/realme/RMX1921/RMX1921-vendor.mk)
 
 
 # HIDL 
@@ -116,10 +116,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
-# Bootanimation
-TARGET_SCREEN_HEIGHT := 2340
-TARGET_SCREEN_WIDTH := 1080
-
 # Binder
 PRODUCT_PACKAGES += \
     libhwbinder \
@@ -222,10 +218,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xt \
     vendor.oppo.hardware.biometrics.fingerprint@2.1
-
-# FOD
-TARGET_HAS_FOD := true
-EXTRA_FOD_ANIMATIONS := true
 
 # IPA
 PRODUCT_PACKAGES += \
@@ -372,15 +364,10 @@ PRODUCT_HOST_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage \
+    $(LOCAL_PATH)/overlay-aosp \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay/frameworks/base/packages/SystemUI
-
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage/lineage-sdk
 
 # Perf
 PRODUCT_PACKAGES += \
@@ -535,10 +522,6 @@ PRODUCT_BOOT_JARS += \
 # Torch
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # Thermal
 PRODUCT_PACKAGES += \
