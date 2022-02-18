@@ -16,27 +16,52 @@
      limitations under the License.
 -->
 <resources>
-    <!-- Whether device has screen with higher aspect ratio -->
-    <bool name="config_haveHigherAspectRatioScreen">true</bool>
+     <!-- Whether device has screen with higher aspect ratio -->
+     <bool name="config_haveHigherAspectRatioScreen">true</bool>
 
-    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">false</bool>
+     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
+     <bool name="config_intrusiveBatteryLed">false</bool>
 
-    <!-- Does the battery LED support multiple colors?
+     <!-- Does the battery LED support multiple colors?
          Used to decide if the user can change the colors -->
-    <bool name="config_multiColorBatteryLed">false</bool>
+     <bool name="config_multiColorBatteryLed">false</bool>
 
-    <!-- Does the notification LED support multiple colors?
+     <!-- Does the notification LED support multiple colors?
          Used to decide if the user can change the colors -->
-    <bool name="config_multicolorled">false</bool>
+     <bool name="config_multicolorled">false</bool>
 
-    <!-- Do the battery/notification LEDs support pulsing?
+     <!-- Do the battery/notification LEDs support pulsing?
          Used to decide if we show pulse settings -->
-    <bool name="config_ledCanPulse">false</bool>
+     <bool name="config_ledCanPulse">false</bool>
 
-    <!-- Whether to show emergency button in power menu -->
-    <bool name="config_showEmergencyButtonInPowerMenu">false</bool>
+     <!-- Whether to show emergency button in power menu -->
+     <bool name="config_showEmergencyButtonInPowerMenu">false</bool>
 
-    <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
-    <bool name="config_cleanupUnusedFingerprints">false</bool>
+     <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
+     <bool name="config_cleanupUnusedFingerprints">false</bool>
+
+     <!-- Paths to the libraries that contain device specific key handlers -->
+     <string-array name="config_deviceKeyHandlerLibs" translatable="false">
+          <item>/system/priv-app/RealmeParts/RealmeParts.apk</item>
+     </string-array>
+
+     <!-- Names of the key handler classes -->
+     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
+          <item>org.device.RealmeParts.KeyHandler</item>
+     </string-array>
+
+     <!-- Default value for proximity check on screen wake
+     NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
+     <bool name="config_proximityCheckOnWake">true</bool>
+     <integer name="config_proximityCheckTimeout">100</integer>
+     <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
+
+     <!-- Whether device has vooc charging support -->
+     <bool name="config_hasVoocCharger">true</bool>
+
+     <!-- Whether or not we should show vendor mismatch message -->
+     <bool name="config_show_vendor_mismatch_message">false</bool>
+
+     <!-- Gaming Mode FPSInfoService FPS node file path -->
+     <string name="config_gamingmode_fpsInfoSysNode" translatable="false">/sys/class/drm/sde-crtc-0/measured_fps</string>
 </resources>
