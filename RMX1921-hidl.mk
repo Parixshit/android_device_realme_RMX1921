@@ -113,6 +113,7 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor \
     android.system.net.netd@1.1 \
     android.system.net.netd@1.1.vendor \
+    CarrierConfigOverlay \
     libjson.vendor \
     librmnetctl \
     librmnetctl.vendor \
