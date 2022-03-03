@@ -5,7 +5,7 @@
 #
 
 # Inherit some common AEX stuff
-TARGET_BOOT_ANIMATION_RES := 2280
+TARGET_BOOT_ANIMATION_RES := 1080
 EXTRA_UDFPS_ANIMATIONS := true
 $(call inherit-product, vendor/aosp/common.mk)
 
