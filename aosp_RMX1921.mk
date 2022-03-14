@@ -4,8 +4,14 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common AEX stuff
+# Inherit some common ArcanaOS stuff.
+ARCANA_OFFICIAL := true
+ARCANA_MAINTAINER := ραяιкѕнιт
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+EXTRA_UDFPS_ANIMATIONS := true
+COPY_APN_SYSTEM := true
+USE_PIXEL_CHARGER_IMAGES := true
 $(call inherit-product, vendor/aosp/common.mk)
 
 # Inherit from RMX1921 device
