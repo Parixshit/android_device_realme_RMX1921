@@ -17,6 +17,9 @@ $(call inherit-product, vendor/realme/RMX1921/RMX1921-vendor.mk)
 # RealmeDirac
 $(call inherit-product, packages/apps/RealmeDirac/dirac.mk)
 
+# microG
+$(call inherit-product, vendor/gapps/gapps.mk)
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
