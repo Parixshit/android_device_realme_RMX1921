@@ -1,13 +1,14 @@
-Compilation of Arcana OS:
+Compilation of Lineage OS:
 ====================
 
 From root directory of Project, perform following commands in terminal
 
 
 ```bash
-git clone https://github.com/ProjectArcana-Devices/android_device_realme_RMX1921.git device/realme/RMX1921
+git clone https://github.com/Parixshit/android_device_realme_RMX1921.git -b crDroid device/realme/RMX1921
 ```
 
 ```bash
-source build/envsetup.sh && lunch aosp_RMX1921-user && make bacon -j$(nproc --all)
+. build/envsetup.sh
+brunch RMX1921
 ```
