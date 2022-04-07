@@ -7,5 +7,3 @@ git cherry-pick 38cf5b663104f9b97229afee732b46c90c9839d8
 cd ..//..//..
 git clone --depth=1 https://github.com/Neutron-Clang/neutron-toolchain.git prebuilts/clang/host/linux-x86/clang-neutron
 git clone https://github.com/HyperTeam/android_packages_apps_RealmeDirac packages/apps/RealmeDirac
-rm -rf vendor/gapps
-git clone https://github.com/BiTGApps/microG-Build.git vendor/gapps
