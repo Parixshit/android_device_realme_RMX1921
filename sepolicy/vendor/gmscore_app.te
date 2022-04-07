@@ -1,4 +1,5 @@
 allow gmscore_app vendor_default_prop:file { getattr map };
+allow gmscore_app traced_producer_socket:sock_file { write };
 binder_call(gmscore_app, hal_memtrack_default);
 dontaudit gmscore_app hal_memtrack_hwservice:hwservice_manager find;
 dontaudit gmscore_app hal_memtrack_hwservice:binder call;
