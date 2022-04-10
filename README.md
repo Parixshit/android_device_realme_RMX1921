@@ -1,14 +1,15 @@
-Compilation of Lineage OS:
+Compilation of Awaken OS:
 ====================
 
 From root directory of Project, perform following commands in terminal
 
 
 ```bash
-git clone https://github.com/Parixshit/android_device_realme_RMX1921.git -b crDroid device/realme/RMX1921
+git clone https://github.com/Parixshit/android_device_realme_RMX1921.git -b awaken device/realme/RMX1921
 ```
 
 ```bash
-. build/envsetup.sh
-brunch RMX1921
+source build/envsetup.sh
+lunch awaken_RMX1921-user
+make bacon -j$(nproc --all)
 ```
