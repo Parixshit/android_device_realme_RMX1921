@@ -4,10 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Awaken stuff.
-AWAKEN_BUILD_TYPE := OFFICIAL
+# Inherit some common DotOS stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Inherit from RMX1921 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -16,7 +15,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := RMX1921
 PRODUCT_MANUFACTURER := Realme
-PRODUCT_NAME := awaken_RMX1921
+PRODUCT_NAME := dot_RMX1921
 PRODUCT_MODEL := Realme XT
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
