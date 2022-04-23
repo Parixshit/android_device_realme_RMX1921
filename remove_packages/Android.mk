@@ -24,7 +24,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     Drive \
     grapheneos \
     GCS \
-    DeskClock \
     Nfc \
     Tag \
     Calendar \
@@ -61,6 +60,8 @@ LOCAL_OVERRIDES_PACKAGES := \
     SetupWizardPrebuilt \
     PixelSetupWizard \
     Tycho \
+    Eleven \
+    SetupWizard \
     USCCDM \
     Via \
     Videos \
