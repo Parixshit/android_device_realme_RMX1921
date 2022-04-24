@@ -25,4 +25,8 @@ brunch
 28 "lineage_RMX1921-user"
 ```
 
-[**How to Upload File to Google Drive**](https://medium.com/geekculture/how-to-upload-file-to-google-drive-from-linux-command-line-69668fbe4937)
+- [crDroidAndroid-12.1-20220424-RMX1921-v8.4.zip](https://drive.google.com/uc?id=1ep9yZgTtKbV3NuOGAAAf3t2ch5FN3IEu&export=download)
+
+- [NikGapps](https://sourceforge.net/projects/nikgapps/files/Releases/NikGapps-SL/21-Apr-2022/NikGapps-core-arm64-12.1-20220421-signed.zip/download)
+
+- [How to Upload File to Google Drive](https://medium.com/geekculture/how-to-upload-file-to-google-drive-from-linux-command-line-69668fbe4937)
