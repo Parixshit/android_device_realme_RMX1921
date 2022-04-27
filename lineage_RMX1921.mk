@@ -4,22 +4,17 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common DerpFest stuff
-TARGET_BOOT_ANIMATION_RES := 1080
-USE_LEGACY_BOOTANIMATION := true
-EXTRA_UDFPS_ANIMATIONS := true
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Official-ify
-DERP_BUILDTYPE := Official
-
-# Inherit from RMX1921 device
+# Inherit from RMX1921 device.
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := RMX1921
 PRODUCT_MANUFACTURER := Realme
-PRODUCT_NAME := derp_RMX1921
+PRODUCT_NAME := lineage_RMX1921
 PRODUCT_MODEL := Realme XT
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo

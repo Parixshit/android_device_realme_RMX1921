@@ -44,8 +44,8 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/realme/RMX1921
 TARGET_KERNEL_CONFIG := RMX1921_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := neutron
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-neutron
+TARGET_KERNEL_CLANG_VERSION := proton
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm710
@@ -177,7 +177,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 TARGET_USE_AOSP_SURFACEFLINGER := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2021-08-05
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
