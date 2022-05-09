@@ -40,9 +40,3 @@ sudo mount --bind /home/ubuntu/.cache /mnt/ccache && export USE_CCACHE=1 && expo
 ```
 
 - [Build crDroid and some general information](https://github.com/crdroidandroid/android#12-initializing-repo)
-
-- [crDroidAndroid-12.1-20220503-RMX1921-v8.4.zip](https://drive.google.com/uc?id=1nsTUvaVrYwj7G3j1H3h7Cj6ap4LwBlBO&export=download) 1.2 GB
-
-- [NikGapps-core-arm64-12.1-20220421-signed.zip](https://sourceforge.net/projects/nikgapps/files/Releases/NikGapps-SL/21-Apr-2022/NikGapps-core-arm64-12.1-20220421-signed.zip/download) 80 MB
-
-- [How to upload file to google drive From linux command line](https://medium.com/geekculture/how-to-upload-file-to-google-drive-from-linux-command-line-69668fbe4937)
