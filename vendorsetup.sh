@@ -30,6 +30,10 @@ else
   echo "No Need: ${DIRAC} is already available there."
 fi
 
+# GOOGLE CAMERA GO
+rm -rf packages/apps/GCamGOPrebuilt
+git clone https://github.com/ArrowOS-Devices/android_packages_apps_GCamGOPrebuilt.git -b arrow-12.1 packages/apps/GCamGOPrebuilt
+
 # OOS DIALER
 rm -rf packages/apps/Dialer
 git clone --depth=1 https://github.com/Parixshit/android_packages_apps_Dialer.git packages/apps/Dialer
