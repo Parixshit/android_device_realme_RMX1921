@@ -2,6 +2,10 @@
 KERNEL="kernel/realme/RMX1921"
 if [ ! -d "$KERNEL" ]; then
 git clone --depth=1 https://github.com/kaderbava/android_kernel_realme_RMX1921.git -b 11 kernel/realme/RMX1921
+cd kernel/realme/RMX1921
+git fetch https://github.com/Anujbarwal/android_kernel_realme_RMX1921.git
+git cherry-pick 81c6878d57e350c775b90b9a5ee51e062e3340da
+cd ..//..//..
 else
   echo "No Need: ${KERNEL} is already available there."
 fi
