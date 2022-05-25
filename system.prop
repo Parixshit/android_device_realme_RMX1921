@@ -92,6 +92,10 @@ persist.sys.sf.native_mode=0
 debug.cpurend.vsync=false
 debug.performance.tuning=1
 
+# HintManager
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
+
 # IMS
 persist.vendor.ims.disableUserAgent=0
 persist.data.iwlan.enable=true
