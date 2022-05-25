@@ -7,17 +7,12 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
 AudioFX \
 Camera2 \
-DeskClock \
-Etar \
-ExactCalculator \
-Eleven \
 EmergencyInfo \
 Gallery2 \
 Jelly \
 SetupWizard \
 Stk \
 Updater \
-Recorder \
 Matlog \
 Tag \
 Nfc
