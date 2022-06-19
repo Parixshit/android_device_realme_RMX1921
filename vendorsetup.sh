@@ -13,7 +13,7 @@ fi
 # VENDOR TREE
 VENDOR="vendor/realme/RMX1921"
 if [ ! -d "$VENDOR" ]; then
-git clone --depth=1 https://github.com/AOSPA-XT/vendor_realme_RMX1921.git -b 12 vendor/realme/RMX1921
+git clone --depth=1 https://github.com/Parixshit/proprietary_vendor_realme_RMX1921.git -b 12 vendor/realme/RMX1921
 else
   echo "No Need: ${VENDOR} is already available there."
 fi
@@ -40,4 +40,4 @@ git clone https://github.com/ArrowOS-Devices/android_packages_apps_GCamGOPrebuil
 
 # OOS DIALER
 rm -rf packages/apps/Dialer
-git clone --depth=1 https://github.com/Parixshit/android_packages_apps_Dialer.git packages/apps/Dialer
+git clone --depth=1 https://github.com/ShevT/android_packages_apps_Dialer.git -b 12.x packages/apps/Dialer
