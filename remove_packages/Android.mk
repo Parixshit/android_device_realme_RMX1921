@@ -6,7 +6,6 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
 AudioFX \
-Camera2 \
 EmergencyInfo \
 Gallery2 \
 Jelly \
