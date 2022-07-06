@@ -18,12 +18,12 @@ else
   echo "No Need: ${VENDOR} is already available there."
 fi
 
-# CLANG PROTON 
-PROTON="prebuilts/clang/host/linux-x86/clang-proton"
-if [ ! -d "$PROTON" ]; then
-git clone --depth=1 https://github.com/kdrag0n/proton-clang.git prebuilts/clang/host/linux-x86/clang-proton
+# CLANG NEUTRON
+NEUTRON="prebuilts/clang/host/linux-x86/clang-neutron"
+if [ ! -d "$NEUTRON" ]; then
+git clone --depth=1 https://github.com/Neutron-Toolchains/neutron-clang.git prebuilts/clang/host/linux-x86/clang-neutron
 else
-  echo "No Need: ${PROTON} is already available there."
+  echo "No Need: ${NEUTRON} is already available there."
 fi
 
 # REALME DIRAC
