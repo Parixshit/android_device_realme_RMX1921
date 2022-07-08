@@ -128,7 +128,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \
     debug.sf.hw=1 \
     debug.mdpcomp.logs=0 \
-    debug.hwui.renderer=skiagl \
     ro.opengles.version=196610 \
     debug.renderengine.backend=skiaglthreaded \
     ro.hardware.egl=adreno \
