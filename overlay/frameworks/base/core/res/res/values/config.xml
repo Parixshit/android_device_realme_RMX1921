@@ -1036,14 +1036,13 @@
 
     <string name="config_mainBuiltInDisplayCutoutRectApproximation">M -80 -1 L 80 -1 L 80 76.5 L -80 76.5 Z</string>
 
-    <dimen name="quick_qs_offset_height">154px</dimen>
+    <!-- Height of area above QQS where battery/time go (45dp to reduce scrolling) -->
+    <dimen name="quick_qs_offset_height">45dp</dimen>
 
-    <!-- The default height of the status bar used in {@link SystemBarUtils#getStatusBarHeight} to
-         calculate the status bar height. -->
+    <!-- Height of the status bar -->
     <dimen name="status_bar_height_default">77px</dimen>
 
-    <!-- Height of the status bar in portrait. 
-         Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead. -->
+    <!-- Height of the status bar in portrait -->
     <dimen name="status_bar_height_portrait">77px</dimen>
 
     <!-- Height of the status bar in landscape -->
@@ -1077,6 +1076,17 @@
 
     <!-- Allow devices override audio panel location to the left side -->
     <bool name="config_audioPanelOnLeftSide">true</bool>
+
+    <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
+         manually by the user. Off by default, since the expected haptic feedback may not be
+         available on some devices. -->
+    <bool name="config_enableHapticTextHandle">true</bool>
+
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_supportSmartPixels">true</bool>
+
+    <!-- NightLight UDFPS -->
+    <bool name="disable_udfps_night_light">true</bool>
 
     <!-- Whether to intercept inputs on screen off -->
     <bool name="config_enableKeyHandler">true</bool>
